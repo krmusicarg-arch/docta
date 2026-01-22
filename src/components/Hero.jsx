@@ -15,13 +15,6 @@ const Hero = () => {
       </div>
 
       <div className="container" style={{ textAlign: 'center', zIndex: 1 }}>
-        <motion.h1 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          style={{ fontSize: 'clamp(2rem, 7.5vw, 6rem)', lineHeight: 0.8, marginBottom: '20px' }}>
-          Docta Boss
-        </motion.h1>
         
         <motion.div
            initial={{ opacity: 0, scale: 0.9 }}
