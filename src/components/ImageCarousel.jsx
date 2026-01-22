@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ImageCarousel = () => {
   const images = [
     '/carro/4parados.jpeg',
-    '/carro/disco.jpeg',
     '/carro/logo.png'
   ];
 
