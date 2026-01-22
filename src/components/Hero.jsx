@@ -4,10 +4,10 @@ import ImageCarousel from './ImageCarousel';
 
 const Hero = () => {
   return (
-    <section id="home" style={{ height: '100vh', width: '100%', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', paddingTop: '150px' }}>
+    <section id="home" className="hero-section">
       {/* Background Placeholder - "Video or Image" */}
-      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#1a1a1a', zIndex: -1 }}>
-        <div style={{ width: '100%', height: '100%', background: 'linear-gradient(45deg, #000 0%, #222 100%)', opacity: 0.5 }}></div>
+      <div className="hero-bg-placeholder">
+        <div className="hero-bg-overlay"></div>
         {/* Placeholder text for User to know where to put assets */}
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: '#333', fontSize: '2rem', textTransform: 'uppercase', textAlign: 'center' }}>
           Background Video/Image Asset

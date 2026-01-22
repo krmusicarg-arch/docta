@@ -26,7 +26,7 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', maxWidth: '800px', margin: '30px auto', aspectRatio: '16/9', overflow: 'hidden', borderRadius: '10px' }}>
+    <div className="carousel-container">
       <AnimatePresence mode='wait'>
         <motion.img
           key={currentIndex}
