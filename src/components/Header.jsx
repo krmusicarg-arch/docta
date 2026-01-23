@@ -14,11 +14,11 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Musica', href: '#music' },
+    { name: 'Escuha a docta', href: '#music' },
     { name: 'Videos', href: '#videos' },
-    { name: 'Shows', href: '#tour' },
+    { name: 'Proximos shows', href: '#tour' },
     { name: 'Galería', href: '#gallery' },
-    { name: 'Contacto', href: '#contact' },
+    { name: 'Contactanos', href: '#contact' },
   ];
 
   const socialLinks = [

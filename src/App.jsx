@@ -17,9 +17,9 @@ function App() {
         <Header />
         <Hero />
         <Tour />
-        <Gallery />
         <FeaturedVideos />
         <TrackList />
+        <Gallery />
         <Footer />
       </div>
     </PlayerProvider>

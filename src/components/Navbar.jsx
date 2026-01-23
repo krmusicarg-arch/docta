@@ -16,7 +16,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'Tour', href: '#tour' },
-    { name: 'Musica', href: '#music' },
+    { name: 'Escucha a docta', href: '#music' },
   ];
 
   return (
