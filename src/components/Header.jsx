@@ -14,11 +14,11 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Escucha a docta', href: '#music' },
+    { name: 'Escuchar', href: '#music' },
     { name: 'Videos', href: '#videos' },
-    { name: 'Proximos shows', href: '#tour' },
+    { name: 'Shows', href: '#tour' },
     { name: 'Galería', href: '#gallery' },
-    { name: 'Contactanos', href: '#contact' },
+    { name: 'Contacto', href: '#contact' },
   ];
 
   const socialLinks = [
@@ -55,8 +55,29 @@ const Header = () => {
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         
         {/* Logo */}
-        <a href="#" className="logo" style={{ zIndex: 1001 }}>
-          <img src="/logo-docta.png" alt="Docta Logo" style={{ height: scrolled ? '60px' : '120px', objectFit: 'contain', transition: 'height 0.3s ease' }} />
+        <a href="#" className="logo" style={{ zIndex: 1001, display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none' }}>
+          <img src="/logo-docta.png" alt="Docta Logo" style={{ height: scrolled ? '50px' : '70px', objectFit: 'contain', transition: 'height 0.3s ease' }} />
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <span style={{ 
+              fontFamily: 'var(--font-heading)', 
+              fontSize: scrolled ? '1.5rem' : '2rem', 
+              lineHeight: '1', 
+              color: 'var(--color-text)',
+              transition: 'font-size 0.3s ease' 
+            }}>
+              DOCTA BOSS
+            </span>
+            <span style={{ 
+              fontFamily: 'var(--font-body)',
+              fontSize: scrolled ? '0.7rem' : '0.85rem', 
+              color: 'var(--color-accent)', 
+              letterSpacing: '1px',
+              textTransform: 'uppercase',
+              transition: 'font-size 0.3s ease' 
+            }}>
+              Banda de Rock & Roll
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}

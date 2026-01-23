@@ -33,6 +33,17 @@ const Footer = () => {
             );
           })}
         </div>
+        
+        <p style={{ 
+          fontFamily: 'var(--font-heading)', 
+          fontSize: '1.2rem', 
+          color: 'var(--color-accent)', 
+          marginBottom: '20px', 
+          letterSpacing: '1px',
+          textTransform: 'uppercase'
+        }}>
+          Primer Banda de Córdoba Tributo Creedence Clearwater Revival
+        </p>
 
         <p style={{ color: '#555', fontSize: '0.9rem' }}>&copy; 2026 DOCTA. All Rights Reserved.</p>
       </div>
