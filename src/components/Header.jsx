@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Escuha a docta', href: '#music' },
+    { name: 'Escucha a docta', href: '#music' },
     { name: 'Videos', href: '#videos' },
     { name: 'Proximos shows', href: '#tour' },
     { name: 'Galería', href: '#gallery' },
