@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer id="contact" style={{ padding: '20px 0', borderTop: '1px solid #222', textAlign: 'center' }}>
       <div className="container">
-        <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>Unase a la lista de correo</h2>
+        <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>Sumate a la lista de correo</h2>
         <form style={{ maxWidth: '500px', margin: '0 auto 30px', display: 'flex', gap: '10px' }}>
           <input 
             type="email" 
