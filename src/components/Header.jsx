@@ -29,7 +29,7 @@ const Header = () => {
     },
     { 
       name: 'Spotify', 
-      href: '#', 
+      href: 'https://open.spotify.com/intl-es/artist/6kyIboXMcLC2dRga4HJ7Kc?si=sjMIz3sUSeazuxFq5j-Dag', 
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14.5c2.5 1.5 5.5 1.5 8 0"/><path d="M7 11.5c3 1.8 7 1.8 10 0"/><path d="M6.5 8.5c3.5 1.9 8.5 1.9 12 0"/></svg>
     },
     { 

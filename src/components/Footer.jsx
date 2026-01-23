@@ -21,12 +21,21 @@ const Footer = () => {
           <button type="submit" className="btn btn-primary">Sign Up</button>
         </form>
 
+        <div style={{ marginBottom: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
+          <a href="mailto:doctabosscba@gmail.com" style={{ fontSize: '1.5rem', color: 'var(--color-text)', textDecoration: 'none', fontFamily: 'var(--font-heading)', letterSpacing: '1px', borderBottom: '2px solid var(--color-accent)' }}>
+            doctabosscba@gmail.com
+          </a>
+          <a href="https://wa.me/5493515435018" target="_blank" style={{ fontSize: '1.5rem', color: 'var(--color-text)', textDecoration: 'none', fontFamily: 'var(--font-heading)', letterSpacing: '1px', borderBottom: '2px solid var(--color-accent)' }}>
+            +54 9 351 543-5018
+          </a>
+        </div>
+
         <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginBottom: '40px' }}>
           {['Instagram', 'YouTube', 'Spotify'].map((social) => {
             const links = {
               'Instagram': 'https://www.instagram.com/doctabossok/',
               'YouTube': 'https://www.youtube.com/@doctaboss',
-              'Spotify': '#'
+              'Spotify': 'https://open.spotify.com/intl-es/artist/6kyIboXMcLC2dRga4HJ7Kc?si=sjMIz3sUSeazuxFq5j-Dag'
             };
             return (
               <a key={social} href={links[social]} style={{ fontSize: '1.2rem', textTransform: 'uppercase', fontFamily: 'var(--font-heading)' }}>{social}</a>

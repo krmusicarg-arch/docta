@@ -4,7 +4,6 @@ const FeaturedVideos = () => {
   const videos = [
     { id: 'zzepSG2_9UY', title: 'Docta Boss' },
     { id: 'q_jWZz5RHmg', title: 'Docta Boss - Live' },
-    { id: 'AY55XruLwnI', title: 'Docta Boss - Video 3' },
   ];
 
   return (
