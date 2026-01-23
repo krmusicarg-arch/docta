@@ -14,12 +14,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="container" style={{ textAlign: 'center', zIndex: 1 }}>
+      <div className="container" style={{ textAlign: 'center', zIndex: 1, maxWidth: '100%', padding: '0' }}>
         
         <motion.div
-           initial={{ opacity: 0, scale: 0.9 }}
+           initial={{ opacity: 0, scale: 0.95 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{ delay: 0.5, duration: 0.8 }}
+           style={{ width: '100%' }}
         >
           <ImageCarousel />
         </motion.div>
