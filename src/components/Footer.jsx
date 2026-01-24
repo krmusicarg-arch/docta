@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Footer component
 const Footer = () => {
   return (
     <footer id="contact" style={{ padding: '20px 0', borderTop: '1px solid #222', textAlign: 'center' }}>
