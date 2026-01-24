@@ -23,7 +23,9 @@ const Footer = () => {
               'Spotify': 'https://open.spotify.com/intl-es/artist/6kyIboXMcLC2dRga4HJ7Kc?si=sjMIz3sUSeazuxFq5j-Dag'
             };
             return (
-              <a key={social} href={links[social]} style={{ fontSize: '1.2rem', textTransform: 'uppercase', fontFamily: 'var(--font-heading)' }}>{social}</a>
+              <a key={social} href={links[social]} style={{ fontSize: '1.2rem', textTransform: 'uppercase', fontFamily: 'var(--font-heading)' }}>
+                {social === 'Instagram' ? '📸 ' : ''}{social}
+              </a>
             );
           })}
         </div>
