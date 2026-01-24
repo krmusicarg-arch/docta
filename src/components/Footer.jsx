@@ -16,11 +16,9 @@ const Footer = () => {
                     </a>        </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginBottom: '40px' }}>
-          {['Instagram', 'YouTube', 'Spotify'].map((social) => {
+          {['Instagram'].map((social) => {
             const links = {
-              'Instagram': 'https://www.instagram.com/doctabossok/',
-              'YouTube': 'https://www.youtube.com/@doctaboss',
-              'Spotify': 'https://open.spotify.com/intl-es/artist/6kyIboXMcLC2dRga4HJ7Kc?si=sjMIz3sUSeazuxFq5j-Dag'
+              'Instagram': 'https://www.instagram.com/doctabossok/'
             };
             return (
               <a key={social} href={links[social]} style={{ fontSize: '1.2rem', textTransform: 'uppercase', fontFamily: 'var(--font-heading)' }}>
