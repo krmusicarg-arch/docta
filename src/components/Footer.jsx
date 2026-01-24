@@ -4,31 +4,15 @@ const Footer = () => {
   return (
     <footer id="contact" style={{ padding: '20px 0', borderTop: '1px solid #222', textAlign: 'center' }}>
       <div className="container">
-        <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>Sumate a la lista de correo</h2>
-        <form style={{ maxWidth: '500px', margin: '0 auto 30px', display: 'flex', gap: '10px' }}>
-          <input 
-            type="email" 
-            placeholder="YOUR EMAIL ADDRESS" 
-            style={{ 
-              flex: 1, 
-              background: 'transparent', 
-              border: '1px solid #444', 
-              padding: '15px', 
-              color: 'white',
-              fontFamily: 'var(--font-body)'
-            }} 
-          />
-          <button type="submit" className="btn btn-primary">Sign Up</button>
-        </form>
+        <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>Contactame</h2>
 
         <div style={{ marginBottom: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
           <a href="mailto:doctabosscba@gmail.com" style={{ fontSize: '1.5rem', color: 'var(--color-text)', textDecoration: 'none', fontFamily: 'var(--font-heading)', letterSpacing: '1px', borderBottom: '2px solid var(--color-accent)' }}>
             doctabosscba@gmail.com
           </a>
-          <a href="https://wa.me/5493515435018" target="_blank" style={{ fontSize: '1.5rem', color: 'var(--color-text)', textDecoration: 'none', fontFamily: 'var(--font-heading)', letterSpacing: '1px', borderBottom: '2px solid var(--color-accent)' }}>
-            +54 9 351 543-5018
-          </a>
-        </div>
+                      <a href="https://wa.me/5493515435018" target="_blank" style={{ fontSize: '1.5rem', color: 'var(--color-text)', textDecoration: 'none', fontFamily: 'var(--font-heading)', letterSpacing: '1px', borderBottom: '2px solid var(--color-accent)' }}>
+                      📞 +54 9 351 543-5018
+                    </a>        </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginBottom: '40px' }}>
           {['Instagram', 'YouTube', 'Spotify'].map((social) => {
