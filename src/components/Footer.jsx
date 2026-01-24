@@ -8,7 +8,7 @@ const Footer = () => {
 
         <div style={{ marginBottom: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
           <a href="mailto:doctabosscba@gmail.com" style={{ fontSize: '1.5rem', color: 'var(--color-text)', textDecoration: 'none', fontFamily: 'var(--font-heading)', letterSpacing: '1px', borderBottom: '2px solid var(--color-accent)' }}>
-            doctabosscba@gmail.com
+            ✉️ doctabosscba@gmail.com
           </a>
                       <a href="https://wa.me/5493515435018" target="_blank" style={{ fontSize: '1.5rem', color: 'var(--color-text)', textDecoration: 'none', fontFamily: 'var(--font-heading)', letterSpacing: '1px', borderBottom: '2px solid var(--color-accent)' }}>
                       📞 +54 9 351 543-5018
