@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ImageCarousel = () => {
   const images = [
     '/carro/4parados.jpeg',
-    '/WhatsApp Image 2025-12-06 at 12.40.08.jpeg',
+    '/carro/_DSC0083.jpg',
     '/_DSC0021.jpg',
     '/_DSC0058.jpg'
   ];
