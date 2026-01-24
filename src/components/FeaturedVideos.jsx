@@ -2,7 +2,9 @@ import React from 'react';
 
 const FeaturedVideos = () => {
   const videos = [
-    { id: 'zzepSG2_9UY', title: 'Docta Boss' },
+    { id: 'zzepSG2_9UY', title: 'Alabama Live' },
+    { id: 'AY55XruLwnI', title: 'Lo de Pablo Live' },
+
   ];
 
   return (
