@@ -39,7 +39,7 @@ const Footer = () => {
           Primer Banda de Córdoba Tributo Creedence Clearwater Revival
         </p>
 
-        <p style={{ color: '#555', fontSize: '0.9rem' }}>&copy; 2026 DOCTA. All Rights Reserved.</p>
+        <p style={{ color: '#555', fontSize: '0.9rem' }}>&copy; 2026 DOCTA BOSS. All Rights Reserved.</p>
       </div>
     </footer>
   );
