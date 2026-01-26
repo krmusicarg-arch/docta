@@ -6,13 +6,13 @@ const Gallery = () => {
 
   // Actual images from public folder
   const images = [
-    { id: 1, src: '/_DSC0021.jpg', alt: 'Gallery Image 1' },
-    { id: 2, src: '/_DSC0030.jpg', alt: 'Gallery Image 2' },
-    { id: 3, src: '/_DSC0035.jpg', alt: 'Gallery Image 3' },
-    { id: 4, src: '/_DSC0048.jpg', alt: 'Gallery Image 4' },
-    { id: 5, src: '/_DSC0058.jpg', alt: 'Gallery Image 5' },
-    { id: 6, src: '/_DSC0083.jpg', alt: 'Gallery Image 6' },
-    { id: 7, src: '/_DSC0108.jpg', alt: 'Gallery Image 7' },
+    { id: 1, src: '/_DSC0021.webp', alt: 'Gallery Image 1' },
+    { id: 2, src: '/_DSC0030.webp', alt: 'Gallery Image 2' },
+    { id: 3, src: '/_DSC0035.webp', alt: 'Gallery Image 3' },
+    { id: 4, src: '/_DSC0048.webp', alt: 'Gallery Image 4' },
+    { id: 5, src: '/_DSC0058.webp', alt: 'Gallery Image 5' },
+    { id: 6, src: '/_DSC0083.webp', alt: 'Gallery Image 6' },
+    { id: 7, src: '/_DSC0108.webp', alt: 'Gallery Image 7' },
   ];
 
   const openModal = (image) => {

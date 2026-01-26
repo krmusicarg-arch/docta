@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ImageCarousel = () => {
   const images = [
     '/carro/4parados.jpeg',
-    '/carro/_DSC0083.jpg',
-    '/_DSC0021.jpg',
-    '/_DSC0058.jpg'
+    '/carro/_DSC0027.webp',
+    '/carro/_DSC0035.webp',
+    '/carro/_DSC0246.webp'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
