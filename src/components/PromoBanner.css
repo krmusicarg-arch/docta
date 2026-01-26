@@ -10,7 +10,7 @@
   padding: 10px 5px;
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  height: var(--promo-banner-height); /* Use the global variable */
+  /* height: var(--promo-banner-height); Removed fixed height */
   display: flex;
   align-items: center;
   justify-content: center;

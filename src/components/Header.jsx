@@ -44,7 +44,7 @@ const Header = ({ showPromo }) => {
       style={{ 
         width: '100%', 
         position: 'fixed', 
-        top: showPromo ? 'var(--promo-banner-height)' : '0', 
+        top: showPromo ? 'var(--actual-promo-banner-height)' : '0', 
         zIndex: 1000, 
         background: scrolled ? 'rgba(5,5,5,0.95)' : 'transparent', 
         padding: scrolled ? '10px 0' : '20px 0', 
