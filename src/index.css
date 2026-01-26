@@ -4,6 +4,15 @@
   --color-accent: #d4a017; /* Gold accent */
   --font-heading: 'Anton', sans-serif;
   --font-body: 'Inter', sans-serif;
+  
+  /* Define banner height globally */
+  --promo-banner-height: 100px; /* Mobile height */
+}
+
+@media (min-width: 768px) {
+  :root {
+    --promo-banner-height: 60px; /* Desktop height */
+  }
 }
 
 * {
@@ -18,6 +27,11 @@ body {
   font-family: var(--font-body);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+body.promo-active {
+  /* This rule is now less critical for the fixed header but good for other content */
+  padding-top: var(--promo-banner-height); 
 }
 
 h1, h2, h3, h4, h5, h6 {

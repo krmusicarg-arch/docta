@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Header = () => {
+const Header = ({ showPromo }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -44,7 +44,7 @@ const Header = () => {
       style={{ 
         width: '100%', 
         position: 'fixed', 
-        top: 0, 
+        top: showPromo ? 'var(--promo-banner-height)' : '0', 
         zIndex: 1000, 
         background: scrolled ? 'rgba(5,5,5,0.95)' : 'transparent', 
         padding: scrolled ? '10px 0' : '20px 0', 
