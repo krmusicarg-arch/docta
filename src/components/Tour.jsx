@@ -38,7 +38,7 @@ const Tour = () => {
               <div style={{ flex: '0 0 auto' }}>
                 {item.link ? (
                   <a href={item.link} className="btn" style={{ fontSize: '0.9rem', padding: '10px 25px' }}>
-                    Tickets
+                    Closed
                   </a>
                 ) : (
                   <span style={{ fontSize: '0.9rem', padding: '10px 25px', color: '#666', textTransform: 'uppercase', letterSpacing: '1px' }}>
