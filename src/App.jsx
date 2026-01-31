@@ -11,7 +11,7 @@ import MusicPlayer from './components/MusicPlayer';
 import { PlayerProvider } from './context/PlayerContext';
 
 function App() {
-  const showPromo = true; // Set to false to hide the banner
+  const showPromo = false; // Set to false to hide the banner
 
   useEffect(() => {
     if (showPromo) {
