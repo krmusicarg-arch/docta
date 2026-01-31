@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'ENE 30', venue: 'Santa Calma', city: 'Córdoba, AR', link: 'http://wa.me/+5493518522222' },
+    { date: 'ENE 30', venue: 'Santa Calma', city: 'Córdoba, AR', link: '' },
     { date: 'ENE 17', venue: 'Lo de Pablo', city: 'Córdoba, AR', link: '' },
     { date: 'ENE 10', venue: 'El barba', city: 'Córdoba, AR', link: '' },
     { date: 'ENE 3', venue: '2da Edicion de la Cerveza', city: 'Bialet Masset Córdoba, AR', link: '' },
@@ -38,7 +38,7 @@ const Tour = () => {
               <div style={{ flex: '0 0 auto' }}>
                 {item.link ? (
                   <a href={item.link} className="btn" style={{ fontSize: '0.9rem', padding: '10px 25px' }}>
-                    Closed
+                    Tickets
                   </a>
                 ) : (
                   <span style={{ fontSize: '0.9rem', padding: '10px 25px', color: '#666', textTransform: 'uppercase', letterSpacing: '1px' }}>
