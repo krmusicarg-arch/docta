@@ -12,41 +12,67 @@ export const PlayerProvider = ({ children }) => {
   // Public tracks data
   const tracks = [
     {
-      title: "Who'll Stop The Rain",
+      title: "Who'll Stop The Rain (LIVE)",
       artist: "Docta Boss",
       src: "/music/WHOLL STOP THE RAIN ALABAMA.wav",
       duration: "2:30"
     },
     {
-      title: "Further On (Up the Road)",
+      title: "Further On Up the Road (LIVE)",
       artist: "Docta Boss",
       src: "/music/FURTHER ON ALABAMA.wav",
       duration: "3:45"
     },
     {
-      title: "Have You Ever Seen The Rain",
+      title: "Have You Ever Seen The Rain (LIVE)",
       artist: "Docta Boss",
       src: "/music/HAVE YOU EVER SEEN THE RAIN ALABAMA.wav",
       duration: "2:40"
     },
     {
-      title: "Hey Tonight",
+      title: "Hey Tonight (LIVE)",
       artist: "Docta Boss",
       src: "/music/HEY TONIGHT ALABAMA.wav",
       duration: "2:43"
     },
     {
-      title: "Pensar En Nada",
+      title: "Pensar En Nada (LIVE)",
       artist: "Docta Boss",
       src: "/music/PENSAR EN NADAALABAMA.wav",
       duration: "4:50"
     },
     {
-      title: "Ramble Tamble",
+      title: "Ramble Tamble (LIVE)",
       artist: "Docta Boss",
       src: "/music/RAMBLE TAMBLE ALABAMA.wav",
       duration: "7:10"
+    },
+   {
+      title: "BORN ON THE BAYOU - SUSIE Q (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/BORN ON THE BAYOU - SUSIE Q.wav",
+      duration: "7:28"
+    },
+   {
+      title: "COTTON FIELD (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/COTTON FIELD.wav",
+      duration: "7:28"
+    },
+    {
+      title: "GREEN RIVER (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/GREEN RIVER.wav",
+      duration: "2:43"
+    },
+  {
+      title: "OOBY DOOBY (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/OOBY DOOBY.wav",
+      duration: "2:17"
     }
+    
+    
   ];
 
   const playTrack = (index) => {

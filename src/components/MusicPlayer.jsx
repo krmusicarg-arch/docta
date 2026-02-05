@@ -39,6 +39,7 @@ const MusicPlayer = () => {
     return () => {
       audio.removeEventListener('timeupdate', updateProgress);
       audio.removeEventListener('ended', onEnded);
+      audio.onerror = null;
       audio.pause();
     };
   }, []); // Run once on mount
@@ -47,11 +48,13 @@ const MusicPlayer = () => {
   useEffect(() => {
     const track = tracks[currentTrackIndex];
     if (track && track.src !== "#") {
-        audioRef.current.src = track.src;
-        audioRef.current.volume = volume;
-        if (isPlaying) {
-            audioRef.current.play().catch(e => console.log("Playback failed", e));
-        }
+      const src = encodeURI(track.src);
+      audioRef.current.src = src;
+      audioRef.current.volume = volume;
+      audioRef.current.onerror = (e) => console.error('Audio load error', e, src);
+      if (isPlaying) {
+        audioRef.current.play().catch(e => console.error("Playback failed", e, src));
+      }
     }
   }, [currentTrackIndex, tracks]); // Depend on track index
 
