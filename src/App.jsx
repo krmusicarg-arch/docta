@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
 import { PlayerProvider } from './context/PlayerContext';
 
+
 function App() {
   const showPromo = false; // Set to false to hide the banner
 
