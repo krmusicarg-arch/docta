@@ -48,12 +48,6 @@ export const PlayerProvider = ({ children }) => {
       duration: "7:10"
     },
    {
-      title: "BORN ON THE BAYOU - SUSIE Q (LIVE)",
-      artist: "Docta Boss",
-      src: "/music/BORN ON THE BAYOU - SUSIE Q.wav",
-      duration: "7:28"
-    },
-   {
       title: "COTTON FIELD (LIVE)",
       artist: "Docta Boss",
       src: "/music/COTTON FIELD.wav",
