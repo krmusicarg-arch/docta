@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'MAR 7', venue: 'La Pulperia', city: 'Córdoba', link: 'https://www.instagram.com/lapulperiavcp/' },
+    { date: 'MAR 7', venue: 'La Pulperia', city: 'Córdoba, Carlos Paz', link: 'https://www.instagram.com/lapulperiavcp/' },
     { date: 'MAR 14', venue: 'Boca point, evento originarios', city: 'Córdoba, Santa Rosa 4200', link: 'https://www.instagram.com/originarios_band_of_brothers/' },
     { date: 'MAR 27', venue: 'Cosquin', city: 'Cosquin', link: '' },
   ];
