@@ -2,16 +2,15 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'ENE 30', venue: 'Santa Calma', city: 'Córdoba, AR', link: '' },
-    { date: 'ENE 17', venue: 'Lo de Pablo', city: 'Córdoba, AR', link: '' },
-    { date: 'ENE 10', venue: 'El barba', city: 'Córdoba, AR', link: '' },
-    { date: 'ENE 3', venue: '2da Edicion de la Cerveza', city: 'Bialet Masset Córdoba, AR', link: '' },
+    { date: 'MAR 7', venue: 'La Pulperia', city: 'Córdoba', link: 'https://www.instagram.com/lapulperiavcp/' },
+    { date: 'MAR 14', venue: 'Boca point, evento originarios', city: 'Córdoba, Santa Rosa 4200', link: 'https://www.instagram.com/originarios_band_of_brothers/' },
+    { date: 'MAR 27', venue: 'Cosquin', city: 'Cosquin', link: '' },
   ];
 
   return (
     <section id="tour" style={{ padding: '20px 0', backgroundColor: '#050505' }}>
       <div className="container">
-        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows</h2>
+        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows Marzo</h2>
         
         <div className="tour-list" style={{ maxWidth: '900px', margin: '0 auto' }}>
           {dates.map((item, index) => (
@@ -38,11 +37,11 @@ const Tour = () => {
               <div style={{ flex: '0 0 auto' }}>
                 {item.link ? (
                   <a href={item.link} className="btn" style={{ fontSize: '0.9rem', padding: '10px 25px' }}>
-                    Tickets
+                    Ver evento
                   </a>
                 ) : (
                   <span style={{ fontSize: '0.9rem', padding: '10px 25px', color: '#666', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                    Closed
+                    Próximamente
                   </span>
                 )}
               </div>
