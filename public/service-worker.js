@@ -29,6 +29,9 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
+  // Only cache same-origin requests (avoid chrome-extension://, data:, etc.)
+  if (!event.request.url.startsWith(self.location.origin)) return;
+
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
