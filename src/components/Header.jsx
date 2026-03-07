@@ -133,40 +133,42 @@ const Header = ({ showPromo }) => {
                 {social.icon}
               </a>
             ))}
-            {canShare && (
-              <button
-                type="button"
-                onClick={async () => {
-                  if (!navigator?.share) return;
-                  try {
-                    await navigator.share({
-                      title: 'Docta Boss - Tributo Creedence Clearwater Revival',
-                      text: 'Instala la app de Docta Boss y escucha rock en cualquier lugar.',
-                      url: window.location.href,
-                    });
-                  } catch (err) {
-                    // User dismissed or share failed
-                  }
-                }}
-                style={{
-                  marginLeft: '10px',
-                  padding: '8px 12px',
-                  borderRadius: '999px',
-                  border: '1px solid rgba(255,255,255,0.25)',
-                  background: 'rgba(255,255,255,0.06)',
-                  color: 'var(--color-text)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  cursor: 'pointer',
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '0.85rem'
-                }}
-              >
-                <Share2 size={16} />
-                Compartir
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={async () => {
+                if (!navigator?.share) {
+                  alert('Función de compartir no disponible en este navegador.');
+                  return;
+                }
+
+                try {
+                  await navigator.share({
+                    title: 'Docta Boss - Tributo Creedence Clearwater Revival',
+                    text: 'Instala la app de Docta Boss y escucha rock en cualquier lugar.',
+                    url: window.location.href,
+                  });
+                } catch (err) {
+                  // User dismissed or share failed
+                }
+              }}
+              style={{
+                marginLeft: '10px',
+                padding: '8px 12px',
+                borderRadius: '999px',
+                border: '1px solid rgba(255,255,255,0.25)',
+                background: 'rgba(255,255,255,0.06)',
+                color: 'var(--color-text)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.85rem'
+              }}
+            >
+              <Share2 size={16} />
+              Compartir
+            </button>
             {canInstall && (
               <button
                 type="button"
@@ -238,40 +240,42 @@ const Header = ({ showPromo }) => {
               ))}
             </div>
 
-            {canShare && (
-              <button
-                type="button"
-                onClick={async () => {
-                  if (!navigator?.share) return;
-                  try {
-                    await navigator.share({
-                      title: 'Docta Boss - Tributo Creedence Clearwater Revival',
-                      text: 'Instala la app de Docta Boss y escucha rock en cualquier lugar.',
-                      url: window.location.href,
-                    });
-                  } catch (err) {
-                    // User dismissed or share failed
-                  }
-                }}
-                style={{
-                  marginTop: '20px',
-                  padding: '12px 18px',
-                  borderRadius: '999px',
-                  border: '1px solid rgba(255,255,255,0.25)',
-                  background: 'rgba(255,255,255,0.06)',
-                  color: 'var(--color-text)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  cursor: 'pointer',
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '1rem'
-                }}
-              >
-                <Share2 size={18} />
-                Compartir
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={async () => {
+                if (!navigator?.share) {
+                  alert('Función de compartir no disponible en este navegador.');
+                  return;
+                }
+
+                try {
+                  await navigator.share({
+                    title: 'Docta Boss - Tributo Creedence Clearwater Revival',
+                    text: 'Instala la app de Docta Boss y escucha rock en cualquier lugar.',
+                    url: window.location.href,
+                  });
+                } catch (err) {
+                  // User dismissed or share failed
+                }
+              }}
+              style={{
+                marginTop: '20px',
+                padding: '12px 18px',
+                borderRadius: '999px',
+                border: '1px solid rgba(255,255,255,0.25)',
+                background: 'rgba(255,255,255,0.06)',
+                color: 'var(--color-text)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-body)',
+                fontSize: '1rem'
+              }}
+            >
+              <Share2 size={18} />
+              Compartir
+            </button>
             {canInstall && (
               <button
                 type="button"
