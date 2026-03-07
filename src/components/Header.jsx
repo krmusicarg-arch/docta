@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 
 const Header = ({ showPromo }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [canInstall, setCanInstall] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,6 +13,27 @@ const Header = ({ showPromo }) => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const beforeInstallPrompt = (event) => {
+      event.preventDefault();
+      setDeferredPrompt(event);
+      setCanInstall(true);
+    };
+
+    const appInstalled = () => {
+      setCanInstall(false);
+      setDeferredPrompt(null);
+    };
+
+    window.addEventListener('beforeinstallprompt', beforeInstallPrompt);
+    window.addEventListener('appinstalled', appInstalled);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', beforeInstallPrompt);
+      window.removeEventListener('appinstalled', appInstalled);
+    };
   }, []);
 
   const navLinks = [
@@ -97,12 +120,43 @@ const Header = ({ showPromo }) => {
             ))}
           </nav>
 
-          <div className="social-icons" style={{ display: 'flex', gap: '15px', marginLeft: '20px', borderLeft: '1px solid #333', paddingLeft: '20px' }}>
+          <div className="social-icons" style={{ display: 'flex', gap: '15px', marginLeft: '20px', borderLeft: '1px solid #333', paddingLeft: '20px', alignItems: 'center' }}>
             {socialLinks.map((social) => (
               <a key={social.name} href={social.href} aria-label={social.name} style={{ color: 'var(--color-text)', transition: 'color 0.3s' }} className="social-link">
                 {social.icon}
               </a>
             ))}
+            {canInstall && (
+              <button
+                type="button"
+                onClick={async () => {
+                  if (!deferredPrompt) return;
+                  deferredPrompt.prompt();
+                  const { outcome } = await deferredPrompt.userChoice;
+                  if (outcome === 'accepted') {
+                    setCanInstall(false);
+                  }
+                  setDeferredPrompt(null);
+                }}
+                style={{
+                  marginLeft: '10px',
+                  padding: '8px 12px',
+                  borderRadius: '999px',
+                  border: '1px solid rgba(255,255,255,0.25)',
+                  background: 'rgba(255,255,255,0.06)',
+                  color: 'var(--color-text)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '0.85rem'
+                }}
+              >
+                <Download size={16} />
+                Instalar
+              </button>
+            )}
           </div>
         </div>
 
@@ -142,6 +196,38 @@ const Header = ({ showPromo }) => {
                 </a>
               ))}
             </div>
+
+            {canInstall && (
+              <button
+                type="button"
+                onClick={async () => {
+                  if (!deferredPrompt) return;
+                  deferredPrompt.prompt();
+                  const { outcome } = await deferredPrompt.userChoice;
+                  if (outcome === 'accepted') {
+                    setCanInstall(false);
+                  }
+                  setDeferredPrompt(null);
+                }}
+                style={{
+                  marginTop: '20px',
+                  padding: '12px 18px',
+                  borderRadius: '999px',
+                  border: '1px solid rgba(255,255,255,0.25)',
+                  background: 'rgba(255,255,255,0.06)',
+                  color: 'var(--color-text)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '1rem'
+                }}
+              >
+                <Download size={18} />
+                Instalar
+              </button>
+            )}
         </div>
       </div>
       
