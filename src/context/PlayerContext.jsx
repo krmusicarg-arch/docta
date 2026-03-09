@@ -80,7 +80,7 @@ export const PlayerProvider = ({ children }) => {
     {
       title: "DOWN OF THE CORNER TEATRO (LIVE)",
       artist: "Docta Boss",
-      src: "/music/DOWN OF THE CORNER TEATRO.wav",
+      src: "/music/DOWN TEATRO.wav",
       duration: "5:43"
     }
   ];
