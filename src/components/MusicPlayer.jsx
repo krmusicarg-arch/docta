@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Play, Pause, SkipBack, SkipForward, Volume2, Music as MusicIcon } from 'lucide-react';
+import { Play, Pause, SkipBack, SkipForward, Volume2, Music as MusicIcon, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePlayer } from '../context/PlayerContext';
 
@@ -86,6 +86,10 @@ const MusicPlayer = () => {
   const bars = Array.from({ length: 20 });
   const currentTrack = tracks[currentTrackIndex];
 
+  const canDownload = Boolean(currentTrack?.src && currentTrack.src !== '#');
+  const downloadUrl = canDownload ? encodeURI(currentTrack.src) : undefined;
+  const downloadFileName = canDownload ? `${currentTrack.title.replace(/[^\w\- ]/g, '').replace(/\s+/g, '_')}${currentTrack.src.substring(currentTrack.src.lastIndexOf('.'))}` : undefined;
+
   return (
     <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 9999 }}>
       <AnimatePresence>
@@ -151,6 +155,31 @@ const MusicPlayer = () => {
                     >
                         {isPlaying ? <Pause size={24} fill="black" /> : <Play size={24} fill="black" />}
                     </button>
+                    <a
+                        href={downloadUrl}
+                        download={downloadFileName}
+                        className="control-btn"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '50px',
+                            height: '50px',
+                            borderRadius: '50%',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            background: canDownload ? 'rgba(212, 160, 23, 0.85)' : 'rgba(255,255,255,0.04)',
+                            cursor: canDownload ? 'pointer' : 'not-allowed',
+                            opacity: canDownload ? 1 : 0.4,
+                        }}
+                        onClick={(e) => {
+                            if (!canDownload) e.preventDefault();
+                        }}
+                        title={canDownload ? 'Descargar canción' : 'Archivo no disponible'}
+                        aria-disabled={!canDownload}
+                        aria-label={canDownload ? 'Descargar canción' : 'Archivo no disponible'}
+                    >
+                        <Download size={20} color={canDownload ? 'black' : 'white'} />
+                    </a>
                     <button onClick={nextTrack} className="control-btn"><SkipForward size={24} /></button>
                 </div>
                 
@@ -218,6 +247,37 @@ const MusicPlayer = () => {
             <MusicIcon size={28} />
         )}
       </motion.button>
+
+      {/* Download button always visible */}
+      <a
+        href={downloadUrl}
+        download={downloadFileName}
+        className="control-btn"
+        style={{
+          position: 'absolute',
+          bottom: '20px',
+          right: '90px',
+          width: '50px',
+          height: '50px',
+          borderRadius: '50%',
+          border: '1px solid rgba(255,255,255,0.2)',
+          background: canDownload ? 'rgba(212, 160, 23, 0.85)' : 'rgba(255,255,255,0.04)',
+          cursor: canDownload ? 'pointer' : 'not-allowed',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          opacity: canDownload ? 1 : 0.4,
+          zIndex: 1000,
+        }}
+        onClick={(e) => {
+          if (!canDownload) e.preventDefault();
+        }}
+        title={canDownload ? 'Descargar canción' : 'Archivo no disponible'}
+        aria-disabled={!canDownload}
+        aria-label={canDownload ? 'Descargar canción' : 'Archivo no disponible'}
+      >
+        <Download size={20} color={canDownload ? 'black' : 'white'} />
+      </a>
     </div>
   );
 };
