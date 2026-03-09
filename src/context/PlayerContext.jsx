@@ -64,9 +64,14 @@ export const PlayerProvider = ({ children }) => {
       artist: "Docta Boss",
       src: "/music/OOBY DOOBY.wav",
       duration: "2:17"
+    },
+    {
+      title: "PAGAN BABY TEATRO (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/PAGAN BABY TEATRO.wav", 
+      duration: "4:53"
     }
-    
-    
+     
   ];
 
   const playTrack = (index) => {
