@@ -70,6 +70,12 @@ export const PlayerProvider = ({ children }) => {
       artist: "Docta Boss",
       src: "/music/PAGAN BABY TEATRO.wav", 
       duration: "4:53"
+    },
+      {
+      title: "BAD MOON RISING TEATRO (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/BAD MOON RISING TEATRO.wav",
+      duration: "2:25"
     }
      
   ];
