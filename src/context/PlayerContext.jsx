@@ -76,8 +76,13 @@ export const PlayerProvider = ({ children }) => {
       artist: "Docta Boss",
       src: "/music/BAD MOON RISING TEATRO.wav",
       duration: "2:25"
+    },
+    {
+      title: "DOWN OF THE CORNER TEATRO (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/DOWN OF THE CORNER TEATRO.wav",
+      duration: "5:43"
     }
-     
   ];
 
   const playTrack = (index) => {
