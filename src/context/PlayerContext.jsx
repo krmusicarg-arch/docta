@@ -86,7 +86,7 @@ export const PlayerProvider = ({ children }) => {
     {
       title: "FORTUNATE SON TEATRO (LIVE)",
       artist: "Docta Boss",
-      src: "/music/FORTUNATE TEATRO.wav",
+      src: "/music/FORTUNATE.wav",
       duration: "4:11"
     }
   ];
