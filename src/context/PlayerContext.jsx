@@ -48,9 +48,9 @@ export const PlayerProvider = ({ children }) => {
       duration: "7:10"
     },
    {
-      title: "COTTON FIELD (LIVE)",
+      title: "COTTON FIELD TEATRO (LIVE)",
       artist: "Docta Boss",
-      src: "/music/COTTON FIELD.wav",
+      src: "/music/COTTON FIELD TEATRO.wav",
       duration: "7:28"
     },
     {
