@@ -88,6 +88,12 @@ export const PlayerProvider = ({ children }) => {
       artist: "Docta Boss",
       src: "/music/FORTUNATE.wav",
       duration: "4:11"
+    },
+    {
+      title: "PROUD MARY TEATRO (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/PROUD MARY.wav",
+      duration: "3:33"
     }
   ];
 
