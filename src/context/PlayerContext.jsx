@@ -71,6 +71,12 @@ export const PlayerProvider = ({ children }) => {
       src: "/music/COMMOTION TEATRO.wav",
       duration: "5:24"
     },
+  {
+      title: "BOOTLEG TEATRO (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/BOOTLEG TEATRO.wav",
+      duration: "3:10"
+    },
     {
       title: "PAGAN BABY TEATRO (LIVE)",
       artist: "Docta Boss",
