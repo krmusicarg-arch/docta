@@ -65,6 +65,12 @@ export const PlayerProvider = ({ children }) => {
       src: "/music/OOBY DOOBY.wav",
       duration: "2:17"
     },
+  {
+      title: "COMMOTION TEATRO (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/COMMOTION TEATRO.wav",
+      duration: "5:24"
+    },
     {
       title: "PAGAN BABY TEATRO (LIVE)",
       artist: "Docta Boss",
