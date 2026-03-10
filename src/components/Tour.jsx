@@ -4,7 +4,7 @@ const Tour = () => {
   const dates = [
     { date: 'Sabado 7', venue: 'La Pulperia', city: 'Córdoba, Carlos Paz', link: 'https://www.instagram.com/lapulperiavcp/' },
     { date: 'Sabado 14', venue: 'Boxpoint, evento originarios', city: 'Córdoba, Santa Rosa 4200', link: 'https://www.instagram.com/originarios_band_of_brothers/' },
-    { date: 'Viernes 27', venue: 'Cosquin', city: 'Cosquin', link: '' },
+    { date: 'Sabado 28', venue: 'Cosquin, festejo San Patricio', city: 'Córdoba, Cosquin', link: '' },
   ];
 
   return (
