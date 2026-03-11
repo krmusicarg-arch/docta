@@ -106,6 +106,12 @@ export const PlayerProvider = ({ children }) => {
       artist: "Docta Boss",
       src: "/music/PROUD MARY.wav",
       duration: "3:33"
+    },
+    {
+      title: "IT CAME OUT OF THE SKY TEATRO(LIVE)",
+      artist: "Docta Boss",
+      src: "/music/IT CAME.wav",
+      duration: "2:42"
     }
   ];
 
