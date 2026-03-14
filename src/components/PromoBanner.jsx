@@ -6,7 +6,7 @@ const PromoBanner = () => {
   const bannerRef = useRef(null); // Ref for the banner container
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2026-01-30T21:00:00');
+    const eventDate = new Date('2026-03-14T22:00:00');
     const difference = +eventDate - +new Date();
     let newTimeLeft = {};
 
@@ -70,22 +70,22 @@ const PromoBanner = () => {
     <div className="promo-banner-container" ref={bannerRef}>
       <div className="promo-banner">
         <div className="promo-text">
-          <p>🔥 ESTE VIERNES EN VIVO 🔥</p>
+          <p>🔥 ESTE SABADO EN VIVO 🔥</p>
           <p className="promo-details">
-            Docta Boss | 30 de Enero | Cordoba | Santa Calma
+            Docta Boss | 14 de Marzo | Córdoba | Boxpoint, evento originarios
           </p>
         </div>
         <div className="promo-countdown">
           {timerComponents.length ? timerComponents : <span>Este viernes!</span>}
         </div>
-        <a
+        {/* <a
           href="http://wa.me/+5493518522222"
           target="_blank"
           rel="noopener noreferrer"
           className="promo-button"
         >
           QUIERO IR
-        </a>
+        </a> */}
       </div>
     </div>
   );
