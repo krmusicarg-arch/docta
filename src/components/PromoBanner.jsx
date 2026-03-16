@@ -72,7 +72,7 @@ const PromoBanner = () => {
         <div className="promo-text">
           <p>🔥 ESTE SABADO EN VIVO 🔥</p>
           <p className="promo-details">
-            Docta Boss | 21 de Marzo | Rio Tercero | Alabama
+            Docta Boss | 21 de Marzo | Rio Tercero | Alabama 
           </p>
         </div>
         <div className="promo-countdown">

@@ -108,6 +108,12 @@ export const PlayerProvider = ({ children }) => {
       duration: "3:17"
     },
     {
+      title: "UP AROUND THE BEND TEATRO (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/UP AROUND THE BEND.wav",
+      duration: "2:38"
+    },
+    {
       title: "IT CAME OUT OF THE SKY TEATRO(LIVE)",
       artist: "Docta Boss",
       src: "/music/IT CAME.wav",
