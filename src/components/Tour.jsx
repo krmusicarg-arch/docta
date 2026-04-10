@@ -2,8 +2,8 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'Sabado 11', venue: 'Lo de pablo', city: 'Córdoba, Villa Allende', link: 'https://www.instagram.com/lodepablo/' },
-    { date: 'Sabado 18', venue: 'A confirmar', city: '', link: '' },
+    { date: 'Sabado 11', venue: 'Lo de Pablo', city: 'Córdoba, Villa Allende', link: 'https://www.instagram.com/lodepablo/' },
+    { date: 'Sabado 18', venue: 'Saint George', city: 'Córdoba', link: 'https://www.instagram.com/saintgeorge.village/' },
   ];
 
   return (
