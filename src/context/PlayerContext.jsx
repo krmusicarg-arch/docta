@@ -114,6 +114,12 @@ export const PlayerProvider = ({ children }) => {
       duration: "2:38"
     },
     {
+      title: "ALABAMA (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/ALABAMA.wav",
+      duration: "5:00"
+    },
+    {
       title: "IT CAME OUT OF THE SKY TEATRO(LIVE)",
       artist: "Docta Boss",
       src: "/music/IT CAME.wav",
