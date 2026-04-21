@@ -11,7 +11,7 @@ import MusicPlayer from './components/MusicPlayer';
 import { PlayerProvider } from './context/PlayerContext';
 
 function App() {
-  const showPromo = true; // Set to true to show the banner
+  const showPromo = false; // Set to true to show the banner
 
   useEffect(() => {
     if (showPromo) {
