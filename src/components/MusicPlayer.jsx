@@ -8,6 +8,7 @@ const MusicPlayer = () => {
     tracks, 
     currentTrackIndex, 
     isPlaying, 
+    setIsPlaying,
     nextTrack, 
     prevTrack, 
     togglePlay,
