@@ -146,6 +146,23 @@ export const PlayerProvider = ({ children }) => {
     setIsPlaying(true);
   };
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const trackParam = params.get('track');
+    if (trackParam !== null) {
+      const index = parseInt(trackParam, 10);
+      if (!isNaN(index) && index >= 0 && index < tracks.length) {
+        setCurrentTrackIndex(index);
+        setIsPlaying(true); // Intenta reproducir automáticamente
+        // Desplazar automáticamente hacia el reproductor (sección de música) si se desea
+        setTimeout(() => {
+          const section = document.getElementById('music');
+          if (section) section.scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+      }
+    }
+  }, []);
+
   return (
     <PlayerContext.Provider value={{
       tracks,

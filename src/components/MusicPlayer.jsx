@@ -61,11 +61,14 @@ const MusicPlayer = () => {
   // Handle play/pause toggle
   useEffect(() => {
     if (isPlaying) {
-        audioRef.current.play().catch(e => console.log("Playback failed", e));
+      audioRef.current.play().catch(e => {
+        console.log("Playback failed (Browser Autoplay Policy):", e);
+        setIsPlaying(false); // Sincroniza la UI a "Pausa" ya que el navegador lo bloqueó
+      });
     } else {
-        audioRef.current.pause();
+      audioRef.current.pause();
     }
-  }, [isPlaying]);
+  }, [isPlaying, setIsPlaying]);
 
   // Handle volume changes
   useEffect(() => {

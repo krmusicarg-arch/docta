@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Pause } from 'lucide-react';
+import { Play, Pause, Share2 } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
 
 const TrackList = () => {
@@ -48,8 +48,40 @@ const TrackList = () => {
                     <p style={{ color: '#888', fontSize: '0.9rem' }}>{track.artist}</p>
                   </div>
 
-                  <div style={{ color: '#666', fontSize: '0.9rem' }}>
-                    {track.duration}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                    <div style={{ color: '#666', fontSize: '0.9rem' }}>
+                      {track.duration}
+                    </div>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const shareUrl = `${window.location.origin}${window.location.pathname}?track=${index}`;
+                        if (navigator.share) {
+                          navigator.share({
+                            title: `Escucha ${track.title} de Docta Boss`,
+                            text: `Te invito a escuchar ${track.title} por Docta Boss.`,
+                            url: shareUrl
+                          }).catch((err) => console.log('Error compartiendo:', err));
+                        } else {
+                          navigator.clipboard.writeText(shareUrl).then(() => {
+                            alert('¡Link copiado al portapapeles!');
+                          });
+                        }
+                      }}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        color: 'var(--color-accent)',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        padding: '5px'
+                      }}
+                      title="Compartir tema"
+                    >
+                      <Share2 size={20} />
+                    </button>
                   </div>
               </div>
              );
