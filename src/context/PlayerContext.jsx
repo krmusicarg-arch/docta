@@ -124,6 +124,12 @@ export const PlayerProvider = ({ children }) => {
       artist: "Docta Boss",
       src: "/music/IT CAME.wav",
       duration: "2:42"
+    },
+    {
+      title: "EVERY BREATH YOU TAKE (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/EVERY BREATH YOU TAKE.wav",
+      duration: "4:46"
     }
   ];
 
