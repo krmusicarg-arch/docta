@@ -1,13 +1,4 @@
 {
 	"inputs": [],
-	"servers": {
-		"markitdown": {
-			"command": "python",
-			"args": [
-				"-m",
-				"markitdown"
-			],
-			"type": "stdio"
-		}
-	}
+	"servers": {}
 }
