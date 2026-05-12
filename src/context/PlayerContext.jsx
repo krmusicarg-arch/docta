@@ -130,6 +130,12 @@ export const PlayerProvider = ({ children }) => {
       artist: "Docta Boss",
       src: "/music/EVERY BREATH YOU TAKE.wav",
       duration: "4:46"
+    },
+    {
+      title: "JOHNNY BE GOODE (LIVE)",
+      artist: "Docta Boss",
+      src: "/music/JBG.wav",
+      duration: "4:46"
     }
   ];
 

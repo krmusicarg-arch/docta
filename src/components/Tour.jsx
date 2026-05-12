@@ -2,14 +2,17 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'Sabado 11', venue: 'Lo de Pablo', city: 'Córdoba, Villa Allende', link: 'https://www.instagram.com/lodepablo/' },
-    { date: 'Sabado 18', venue: 'Saint George', city: 'Córdoba', link: 'https://www.instagram.com/saintgeorge.village/' },
+    { date: 'Viernes 8', venue: 'El barba', city: 'Córdoba', link: '' },
+    { date: 'Jueves 14', venue: 'Antares', city: 'Córdoba, cerro de las rosas', link: 'https://www.instagram.com/antarescerrodelasrosas/' },
+    { date: 'Viernes 22', venue: 'Horus', city: 'Córdoba', link: 'https://www.instagram.com/horusdiscooficial/' },
+    { date: 'Viernes 29', venue: 'La pulperia', city: 'Córdoba, Carlos Paz', link: 'https://www.instagram.com/lapulperiavcp/' },
+    { date: 'Sabado 30', venue: 'Alabama', city: 'Córdoba', link: 'https://www.instagram.com/alabamarestobar//' },
   ];
 
   return (
     <section id="tour" style={{ padding: '20px 0', backgroundColor: '#050505' }}>
       <div className="container">
-        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows Abril</h2>
+        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows Mayo</h2>
         
         <div className="tour-list" style={{ maxWidth: '900px', margin: '0 auto' }}>
           {dates.map((item, index) => (
