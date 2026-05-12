@@ -6,7 +6,7 @@ const Tour = () => {
     { date: 'Jueves 14', venue: 'Antares', city: 'Córdoba, cerro de las rosas', link: 'https://www.instagram.com/antarescerrodelasrosas/' },
     { date: 'Viernes 22', venue: 'Horus', city: 'Córdoba', link: 'https://www.instagram.com/horusdiscooficial/' },
     { date: 'Viernes 29', venue: 'La pulperia', city: 'Córdoba, Carlos Paz', link: 'https://www.instagram.com/lapulperiavcp/' },
-    { date: 'Sabado 30', venue: 'Alabama', city: 'Córdoba', link: 'https://www.instagram.com/alabamarestobar//' },
+    { date: 'Sabado 30', venue: 'Alabama', city: 'Córdoba', link: 'https://www.instagram.com/alabamarestobar/' },
   ];
 
   return (
