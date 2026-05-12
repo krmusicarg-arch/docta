@@ -70,7 +70,7 @@ const PromoBanner = () => {
     <div className="promo-banner-container" ref={bannerRef}>
       <div className="promo-banner">
         <div className="promo-text">
-          <p>🔥 ESTE SABADO EN VIVO 🔥</p>
+          <p>🔥 ESTE JUEVES EN VIVO 🔥</p>
           <p className="promo-details">
             Docta Boss | Jueves 14 de Mayo | Cordoba | Antares Cerro de las Rosas 
           </p>
