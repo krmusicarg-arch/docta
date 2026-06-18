@@ -6,7 +6,7 @@ const PromoBanner = () => {
   const bannerRef = useRef(null); // Ref for the banner container
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2026-06-20T22:00:00');
+    const eventDate = new Date('2026-06-20T23:00:00');
     const difference = +eventDate - +new Date();
     let newTimeLeft = {};
 
