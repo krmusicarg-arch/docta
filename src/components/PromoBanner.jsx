@@ -6,7 +6,7 @@ const PromoBanner = () => {
   const bannerRef = useRef(null); // Ref for the banner container
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2026-06-20T23:00:00');
+    const eventDate = new Date('2026-06-27T22:00:00');
     const difference = +eventDate - +new Date();
     let newTimeLeft = {};
 
@@ -72,7 +72,7 @@ const PromoBanner = () => {
         <div className="promo-text">
           <p>🔥 ESTE SABADO EN VIVO 🔥</p>
           <p className="promo-details">
-            Docta Boss | Sabado 20 de Junio | Villa Maria | El Rito 
+            Docta Boss | Sabado 27 de Junio | Villa Carlos Paz | La pulperia 
           </p>
         </div>
         <div className="promo-countdown">
