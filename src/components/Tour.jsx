@@ -2,16 +2,17 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'Viernes 12', venue: 'Loka Ella', city: 'Córdoba', link: '' },
-    { date: 'Sabado 20', venue: 'El rito', city: 'Córdoba, Villa María', link: 'https://www.instagram.com/elritobar.vm/' },
-    { date: 'Domingo 21', venue: 'Saint George', city: 'Córdoba, Malvinas Argentina', link: 'https://www.instagram.com/saintgeorge.village/' },
-    { date: 'Viernes 26', venue: 'La pulperia', city: 'Córdoba, Carlos Paz', link: 'https://www.instagram.com/lapulperiavcp/' },
+    { date: 'Jueves 13', venue: 'Antares', city: 'Córdoba, Cerro de las Rosas', link: 'https://www.instagram.com/antarescerrodelasrosas' },
+    { date: 'Viernes 14', venue: 'Loca Ella', city: 'Córdoba', link: 'https://www.instagram.com/locaella.restopub' },
+    { date: 'Sabado 15', venue: 'Salu Bar', city: 'Córdoba, J. Cortes 868', link: 'https://www.instagram.com/salubarpopular' },
+    { date: 'Viernes 21', venue: 'Horus', city: 'Córdoba', link: 'https://www.instagram.com/horusdiscooficial' },
+    { date: 'Sabado 22', venue: 'Ticino', city: 'Córdoba', link: '' },
   ];
 
   return (
     <section id="tour" style={{ padding: '20px 0', backgroundColor: '#050505' }}>
       <div className="container">
-        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows Junio</h2>
+        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows Agosto</h2>
         
         <div className="tour-list" style={{ maxWidth: '900px', margin: '0 auto' }}>
           {dates.map((item, index) => (
@@ -42,7 +43,7 @@ const Tour = () => {
                   </a>
                 ) : (
                   <span style={{ fontSize: '0.9rem', padding: '10px 25px', color: '#666', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                    Próximamente
+                    
                   </span>
                 )}
               </div>
