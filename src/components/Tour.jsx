@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'Viernes 18 Sept', venue: 'La Pulperias', city: 'Carlos Paz, Córdoba', link: 'https://www.instagram.com/lapulperiavcp' },
+    { date: 'Viernes 18 Sept', venue: 'La Pulperias', city: 'Carlos Paz, Córdoba', link: '' },
     { date: 'Viernes 25 Sept', venue: 'Peatonal 18 Horas', city: 'Carlos Paz, Córdoba', link: '' },
     { date: 'Sabado 26 Sept', venue: 'Encuentro Harley', city: 'Carlos Paz, Córdoba', link: '' },
     { date: 'Sabado 3 Oct', venue: 'Only Spin', city: 'Villa Allende, Córdoba', link: '' },
