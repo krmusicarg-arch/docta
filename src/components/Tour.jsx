@@ -2,17 +2,22 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'Jueves 13', venue: 'Antares', city: 'Córdoba, Cerro de las Rosas', link: 'https://www.instagram.com/antarescerrodelasrosas' },
-    { date: 'Viernes 14', venue: 'Loca Ella', city: 'Córdoba', link: 'https://www.instagram.com/locaella.restopub' },
-    { date: 'Sabado 15', venue: 'Salu Bar', city: 'Córdoba, J. Cortes 868', link: 'https://www.instagram.com/salubarpopular' },
-    { date: 'Viernes 21', venue: 'Horus', city: 'Córdoba', link: 'https://www.instagram.com/horusdiscooficial' },
-    { date: 'Sabado 22', venue: 'Ticino', city: 'Córdoba', link: '' },
+    { date: 'Viernes 18 Sept', venue: 'La Pulperias', city: 'Carlos Paz, Córdoba', link: 'https://www.instagram.com/lapulperiavcp' },
+    { date: 'Viernes 25 Sept', venue: 'Peatonal 18 Horas', city: 'Carlos Paz, Córdoba', link: '' },
+    { date: 'Sabado 26 Sept', venue: 'Encuentro Harley', city: 'Carlos Paz, Córdoba', link: '' },
+    { date: 'Sabado 3 Oct', venue: 'Only Spin', city: 'Villa Allende, Córdoba', link: '' },
+    { date: 'Sabado 10 Oct', venue: 'Oktober fest', city: 'Villa General Belgrano, Córdoba', link: '' },
+    { date: 'Domingo 11 Oct', venue: 'Encuentro Originario', city: 'Carlos Paz, Córdoba', link: '' },
+    { date: 'Viernes 16 Oct', venue: 'Horus Disco', city: 'Córdoba', link: '' },
+    { date: 'Sabado 24 Oct', venue: 'Salu Bar', city: 'Alta Cordoba, Córdoba', link: '' },
+    { date: 'Sabado 31 Oct', venue: 'Alabama', city: 'Rio Tercero, Córdoba', link: '' },
+
   ];
 
   return (
     <section id="tour" style={{ padding: '20px 0', backgroundColor: '#050505' }}>
       <div className="container">
-        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows Agosto</h2>
+        <h2 style={{ fontSize: '4rem', marginBottom: '30px', textAlign: 'center' }}>Shows</h2>
         
         <div className="tour-list" style={{ maxWidth: '900px', margin: '0 auto' }}>
           {dates.map((item, index) => (
