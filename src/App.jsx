@@ -8,6 +8,7 @@ import Tour from './components/Tour';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
+import Projects from './components/Projects';
 import { PlayerProvider } from './context/PlayerContext';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <MusicPlayer />
         <Header showPromo={showPromo} />
         <Hero />
+        <Projects />
         <Tour />
         <FeaturedVideos />
         <TrackList />

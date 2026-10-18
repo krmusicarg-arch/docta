@@ -19,6 +19,7 @@ const MusicPlayer = () => {
   const [volume, setVolume] = useState(0.5);
   const [progress, setProgress] = useState(0);
   const audioRef = useRef(new Audio());
+  const playerRef = useRef(null);
 
   useEffect(() => {
     const audio = audioRef.current;
