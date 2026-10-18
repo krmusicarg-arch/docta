@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doctaboss.com.ar/sitemap.xml
+
