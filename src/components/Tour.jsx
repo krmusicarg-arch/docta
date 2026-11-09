@@ -2,15 +2,17 @@ import React from 'react';
 
 const Tour = () => {
   const dates = [
-    { date: 'Viernes 18 Sept', venue: 'La Pulperia', city: 'Carlos Paz, Córdoba', link: '' },
-    { date: 'Viernes 25 Sept', venue: 'Peatonal 18 Horas', city: 'Carlos Paz, Córdoba', link: '' },
-    { date: 'Sabado 26 Sept', venue: 'Encuentro Harley', city: 'Carlos Paz, Córdoba', link: '' },
     { date: 'Sabado 3 Oct', venue: 'Only Spin', city: 'Villa Allende, Córdoba', link: '' },
     { date: 'Sabado 10 Oct', venue: 'Oktober fest', city: 'Villa General Belgrano, Córdoba', link: '' },
     { date: 'Domingo 11 Oct', venue: 'Encuentro Originario', city: 'Carlos Paz, Córdoba', link: '' },
     { date: 'Viernes 16 Oct', venue: 'Horus Disco', city: 'Córdoba', link: '' },
     { date: 'Sabado 24 Oct', venue: 'Salu Bar', city: 'Alta Cordoba, Córdoba', link: '' },
     { date: 'Sabado 31 Oct', venue: 'Alabama', city: 'Rio Tercero, Córdoba', link: '' },
+    { date: 'Viernes 6 Nov', venue: 'Festival Bandas Tributo', city: 'Córdoba', link: '' },
+    { date: 'Viernes 13 Nov', venue: 'La Pulperia', city: 'Carlos Paz, Córdoba', link: '' },
+    { date: 'Viernes 20 Nov', venue: 'Blu bar', city: 'Córdoba', link: '' },
+    { date: 'Sabado 21 Nov', venue: 'Cosquin Moto Fest', city: 'Cosquin, Córdoba', link: '' },
+    { date: 'Viernes 27 Nov', venue: 'Lo de Pablo', city: 'Villa Allende, Córdoba', link: '' },
 
   ];
 
