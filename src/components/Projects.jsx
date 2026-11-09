@@ -15,10 +15,10 @@ const projects = [
   },
   {
     id: 'docta-blue',
-    name: 'Docta Blue',
+    name: 'Docta Blues',
     tagline: 'El alma del blues en vivo',
     description:
-      'Para los que sienten el blues en el alma. Docta Blue lleva el sonido raíz del blues americano a cada show con guitarra cargada de feeling, groove profundo y una interpretación que eriza la piel. Desde Chicago hasta Córdoba, el blues es un idioma universal.',
+      'Para los que sienten el blues en el alma. Docta Blues lleva el sonido raíz del blues americano a cada show con guitarra cargada de feeling, groove profundo y una interpretación que eriza la piel. Desde Chicago hasta Córdoba, el blues es un idioma universal.',
     genre: 'Blues',
     color: '#1a6bbd',
     icon: '🎵',
