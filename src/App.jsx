@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import PromoBanner from './components/PromoBanner';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import FeaturedVideos from './components/FeaturedVideos';
 import TrackList from './components/TrackList';
 import Tour from './components/Tour';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
 import Projects from './components/Projects';
+import VideoGallery from './components/VideoGallery';
 import { PlayerProvider } from './context/PlayerContext';
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <Hero />
         <Projects />
         <Tour />
-        <FeaturedVideos />
+        <VideoGallery />
         <TrackList />
         <Gallery />
         <Footer />

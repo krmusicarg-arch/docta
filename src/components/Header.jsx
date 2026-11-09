@@ -70,7 +70,7 @@ const Header = ({ showPromo }) => {
 
   const navLinks = [
     { name: 'Escucha a docta', href: '#music' },
-    { name: 'Videos', href: '#videos' },
+    { name: 'Videos', href: '#video-gallery' },
     { name: 'Shows', href: '#tour' },
     { name: 'Galería', href: '#gallery' },
     { name: 'Contactanos', href: '#contact' },

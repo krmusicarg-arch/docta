@@ -17,20 +17,19 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'Proyectos', href: '#proyectos' },
     { name: 'Tour', href: '#tour' },
+    { name: 'Videos', href: '#video-gallery' },
     { name: 'Escucha a docta', href: '#music' },
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-sm py-2' : 'bg-transparent py-6'}`} style={{ width: '100%', position: 'fixed', top: 0, zIndex: 1000, background: scrolled ? 'rgba(5,5,5,0.95)' : 'transparent', padding: scrolled ? '15px 0' : '30px 0', borderBottom: scrolled ? '1px solid rgba(255,255,255,0.1)' : 'none' }}>
+    <nav style={{ width: '100%', position: 'fixed', top: 0, zIndex: 1000, background: scrolled ? 'rgba(5,5,5,0.95)' : 'transparent', padding: scrolled ? '15px 0' : '30px 0', borderBottom: scrolled ? '1px solid rgba(255,255,255,0.1)' : 'none', transition: 'all 0.3s' }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <a href="#" className="logo">
-          {/* Logo height adjusted for elegance */}
+        <a href="#home" className="logo">
           <img src="/logo-docta.png" alt="Docta Logo" style={{ height: '120px', objectFit: 'contain' }} />
         </a>
 
         {/* Desktop Menu */}
         <div className="desktop-menu" style={{ display: 'none', gap: '40px' }}>
-          {/* Inline styles for media query imitation - simplified for React component w/o external CSS modules for now, will rely on index.css mostly but ensuring structure */}
           <style>{`
             @media(min-width: 768px) {
               .desktop-menu { display: flex !important; }
@@ -38,7 +37,11 @@ const Navbar = () => {
             }
           `}</style>
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} style={{ fontSize: '1.2rem', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}>
+            <a
+              key={link.name}
+              href={link.href}
+              style={{ fontSize: '1.2rem', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}
+            >
               {link.name}
             </a>
           ))}
@@ -54,7 +57,12 @@ const Navbar = () => {
       {isOpen && (
         <div style={{ position: 'fixed', top: '70px', left: 0, width: '100%', height: 'calc(100vh - 70px)', background: '#050505', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '30px', zIndex: 999 }}>
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} style={{ fontSize: '2rem', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}>
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              style={{ fontSize: '2rem', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}
+            >
               {link.name}
             </a>
           ))}

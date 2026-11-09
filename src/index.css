@@ -18,6 +18,16 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensa el navbar fijo en todos los anchors */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
