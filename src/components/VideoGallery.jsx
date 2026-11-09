@@ -16,6 +16,11 @@ const allVideos = [
   { src: '/videos/docta11.mp4',  title: 'Docta Boss', subtitle: 'En vivo',  band: 'docta' },
   { src: '/videos/docta12.mp4',  title: 'Docta Boss', subtitle: 'En vivo',  band: 'docta' },
   { src: '/videos/docta13.mp4',  title: 'Docta Boss', subtitle: 'En vivo',  band: 'docta' },
+  { src: '/videos/docta14.mp4',  title: 'Docta Boss', subtitle: 'En vivo',  band: 'docta' },
+  { src: '/videos/docta15.mp4',  title: 'Docta Boss', subtitle: 'En vivo',  band: 'docta' },
+  { src: '/videos/docta16.mp4',  title: 'Docta Boss', subtitle: 'En vivo',  band: 'docta' },
+  { src: '/videos/docta17.mp4',  title: 'Docta Boss', subtitle: 'En vivo',  band: 'docta' },
+  
   // ── Midnite Special ─────────────────────────────────
   { src: '/videos/midnite1.mp4', title: 'Midnite Special', subtitle: 'En vivo — Festival Bandas Tributo', band: 'midnite' },
   { src: '/videos/midnite2.mp4', title: 'Midnite Special', subtitle: 'En vivo', band: 'midnite' },
